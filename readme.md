@@ -1,6 +1,5 @@
-<center><img src="images/tango_and_text.png" width=400></center>
-
-<center><p><i>"It takes two (processes) to Tango"</i></p></center>
+<p align="center"><img src="images/tango_and_text.png" width=400></p>
+<p align="center"><i>"It takes two (processes) to Tango"</i></p>
 
 # Tango RFC
 
@@ -27,7 +26,7 @@ env.close()
 ...for _live training_ and _fast deployment_ to **External Environments** (such as game engines, programmable robotics or IoT hardware, web crawlers, stock market intefaces, and more!)
 
 
-<center><img src="images/tango_example.gif"></center>
+<p align="center"><img src="images/tango_example.gif"></p>
 
 _The Sokoban example is based on the [Phaser tutorial](https://phaser.io/news/2018/02/phaser-3-sokoban-tutorial) originally by [Emanuele Feronato](https://www.emanueleferonato.com/2018/02/09/phaser-3-version-of-the-html5-swipe-controlled-sokoban-game/)_
 
@@ -141,7 +140,7 @@ Both the ML code and the External Environment can connect to the Tango Gateway S
 
 Messages pass in an RPC-like manner from the ML code to the External Environment and back via the Tango Gateway Server in the following manner:
 
-<center><img src="images/tango_routing.drawio.png"></center>
+<p align="center"><img src="images/tango_routing.drawio.png"></p>
 
 All messages in the current version are in JSON.
 
