@@ -35,12 +35,12 @@ async def ws_to_zeromq(request, ws):
         print('ingesting ws')
         msg = json.loads(await app.ctx.ws.recv())
         print(f'WS received External: {msg}')
-        await app.ctx.ws.send(json.dumps({'msg':"Confirmed"}))
+        #await app.ctx.ws.send(json.dumps({'msg':"Confirmed"})) #TODO: TCP_NODELAY to disable Nagle's algorithm w/ a comment in the readme (https://saturncloud.io/blog/the-tcpnodelay-option-should-you-turn-off-nagles-algorithm/)
 
         await app.ctx.zmq.send_json(msg)
         print(f'WS sent to Internal: {msg}')
     
     print('ws disconnected')
 
-#python -m sanic tango_gateway.app --host=localhost --port=8000 --workers=1
+#python -m sanic zmq_to_websocket_gateway.app --host=localhost --port=8000 --workers=1
 #uvicorn myapp:app

@@ -1,7 +1,5 @@
-<p align="center"><img src="images/tango_and_text.png" width=400></p>
+<p align="center"><img src="images/tango_and_text.png" alt="#Tango" width=400></p>
 <p align="center"><i>"It takes two (processes) to Tango"</i></p>
-
-# Tango RFC
 
 Tango lets you write Gymnasium-style **Reinforcement Learning** code...
 
@@ -150,7 +148,7 @@ All messages in the current version are in JSON.
 
 Future code additions may include (but are not limited to) the following quality-of-life and Reinforcement Learning oriented upgrades:
 
-* Environment files
+* Speed benchmarks & comparison to running a straight Gymnasium `Env`
 * PettingZoo support
 * Multi-environment suport via Stable Baselines VecEnv
 * Code quality updates (formatting / linting / test cases, and adherence to [Farama standards](https://farama.org/project_standards))
@@ -160,8 +158,8 @@ Future code additions may include (but are not limited to) the following quality
 * Examples with additional game engines (Godot, Unity, etc.)
 * Examples with non-game environments
 * Examples of non-Stable Baselines RL code (eg: AlphaZero implementations)
-* More interfaces for AI code (eg: TCP, HTTP, WebSockets)
-* More interfaces for external code (eg: TCP, HTTP, ZeroMQ)
+* More interfaces for AI code (eg: TCP, HTTP, gRPC, WebSockets)
+* More interfaces for external code (eg: TCP, HTTP, gRPC, ZeroMQ)
 * Better management of errors and incorrect message passig 
 
 Note that these are upgrades that would likely be considered "in-scope" for the Farama Foundation, and focus on Reinforcement Learning projects.
@@ -173,7 +171,7 @@ The Tango Gateway Server approach may also be useful for other types of closely 
 * LLM agent support
 * LLM agent example via replication of "Generative Agents: Interactive Simulacra of Human Behavior" [(_Park et al. 2023_)](https://arxiv.org/abs/2304.03442)
 
-## 4. Proof of Concept
+## 4. Example Code
 
 ### _4.a Running_
 
